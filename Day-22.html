@@ -239,7 +239,7 @@ img, svg { max-width: 100%; }
   <div class="progress-bar">
     <span>🎯 Tiến độ:</span>
     <div class="progress-track"><div class="progress-fill" id="prog-fill"></div></div>
-    <b id="prog-text">0 / 32</b>
+    <b id="prog-text">0 / 33</b>
     <button class="btn-sm active" id="ime-toggle-btn" onclick="toggleIME()" title="Bật/tắt chế độ gõ Pinyin trực tiếp">⌨️ Gõ Pinyin: BẬT</button>
     <button class="btn-sm" onclick="resetAll()" title="Xoá tiến độ làm lại">↺</button>
   </div>
@@ -741,6 +741,12 @@ img, svg { max-width: 100%; }
 <div class="word-bank" data-words="他|。|转|围|，|觉得|很|孤单|孩子|他|里|孩子|很|着|今天|他|高兴|不|可是|，|，|在|家|本来"></div>
 <div class="input-check"><button class="btn-primary" onclick="checkScramble(this)">Kiểm tra câu</button><button class="btn-sm" onclick="resetScramble(this)">Làm lại</button><span class="feedback"></span></div>
 </div>
+<div class="scramble-box" id="scr-4" data-target="本来他要去看朋友，可是数据没有做完，他只能继续工作，朋友很体谅他。">
+<div><b>Câu 4:</b> Vốn dĩ anh ấy định đi thăm bạn, nhưng số liệu chưa làm xong, anh ấy đành tiếp tục làm việc, bạn rất thông cảm cho anh ấy.</div>
+<div class="answer-zone"></div>
+<div class="word-bank" data-words="体谅|，|完|他|做|要|，|他|看|没有|数据|只|去|继续|很|能|。|可是|他|朋友|本来|工作|朋友|，"></div>
+<div class="input-check"><button class="btn-primary" onclick="checkScramble(this)">Kiểm tra câu</button><button class="btn-sm" onclick="resetScramble(this)">Làm lại</button><span class="feedback"></span></div>
+</div>
 </div>
 <div class="card">
 <h2>📚 Bài 7: Đọc hiểu đoạn văn – Chọn đáp án <span class="badge">Đọc hiểu Cao cấp 2</span></h2>
@@ -886,7 +892,7 @@ img, svg { max-width: 100%; }
 </div>
 <div class="card">
 <h2>📋 Tổng kết để gửi em <span class="badge">Câu cần ôn lại</span></h2>
-<div>Đúng <b id="sum-score">0 / 32</b> mục.</div>
+<div>Đúng <b id="sum-score">0 / 33</b> mục.</div>
 <ul class="summary-list" id="wrong-list"><li>Chưa có câu sai nào — anh làm đến đâu, câu sai sẽ tự gom vào đây.</li></ul>
 <div class="input-check">
 <button class="btn-primary" onclick="copySummary()">📋 Chép kết quả</button>
@@ -917,7 +923,7 @@ img, svg { max-width: 100%; }
 <script>
 // ====== Trạng thái + lưu trữ (localStorage) ======
 var LS_KEY = 'caocap2-Day-22';
-var TOTAL_TASKS = 32;
+var TOTAL_TASKS = 33;
 var ITEM_INFO = {
   "rev-1": [
     "Ôn nhanh 1 (迫不得已)",
@@ -1010,6 +1016,10 @@ var ITEM_INFO = {
   "scr-3": [
     "Sắp xếp câu 3",
     "本来孩子围着他转，他很高兴，可是今天孩子不在家里，他觉得很孤单。"
+  ],
+  "scr-4": [
+    "Sắp xếp câu 4",
+    "本来他要去看朋友，可是数据没有做完，他只能继续工作，朋友很体谅他。"
   ],
   "read-1": [
     "Đọc hiểu câu 1",

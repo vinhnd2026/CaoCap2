@@ -239,7 +239,7 @@ img, svg { max-width: 100%; }
   <div class="progress-bar">
     <span>🎯 Tiến độ:</span>
     <div class="progress-track"><div class="progress-fill" id="prog-fill"></div></div>
-    <b id="prog-text">0 / 32</b>
+    <b id="prog-text">0 / 33</b>
     <button class="btn-sm active" id="ime-toggle-btn" onclick="toggleIME()" title="Bật/tắt chế độ gõ Pinyin trực tiếp">⌨️ Gõ Pinyin: BẬT</button>
     <button class="btn-sm" onclick="resetAll()" title="Xoá tiến độ làm lại">↺</button>
   </div>
@@ -729,6 +729,12 @@ img, svg { max-width: 100%; }
 <div class="word-bank" data-words="，|时间|每天|高兴|好|因为|。|觉得|很|工作|珍惜|，|好|都|说|很|他|要|，|珍惜|，|心态|他的|，|很|生活"></div>
 <div class="input-check"><button class="btn-primary" onclick="checkScramble(this)">Kiểm tra câu</button><button class="btn-sm" onclick="resetScramble(this)">Làm lại</button><span class="feedback"></span></div>
 </div>
+<div class="scramble-box" id="scr-4" data-target="如果不珍惜时间，就不能好好做幼教，他的心态也不会好。">
+<div><b>Câu 4:</b> Nếu không trân trọng thời gian thì không thể làm tốt giáo dục mầm non, tâm thế của anh ấy cũng sẽ không tốt.</div>
+<div class="answer-zone"></div>
+<div class="word-bank" data-words="，|他的|好|如果|也|时间|就|会|不|能|不|珍惜|幼教|。|心态|，|好|做|好|不"></div>
+<div class="input-check"><button class="btn-primary" onclick="checkScramble(this)">Kiểm tra câu</button><button class="btn-sm" onclick="resetScramble(this)">Làm lại</button><span class="feedback"></span></div>
+</div>
 </div>
 <div class="card">
 <h2>📚 Bài 7: Đọc hiểu đoạn văn – Chọn đáp án <span class="badge">Đọc hiểu Cao cấp 2</span></h2>
@@ -870,7 +876,7 @@ img, svg { max-width: 100%; }
 </div>
 <div class="card">
 <h2>📋 Tổng kết để gửi em <span class="badge">Câu cần ôn lại</span></h2>
-<div>Đúng <b id="sum-score">0 / 32</b> mục.</div>
+<div>Đúng <b id="sum-score">0 / 33</b> mục.</div>
 <ul class="summary-list" id="wrong-list"><li>Chưa có câu sai nào — anh làm đến đâu, câu sai sẽ tự gom vào đây.</li></ul>
 <div class="input-check">
 <button class="btn-primary" onclick="copySummary()">📋 Chép kết quả</button>
@@ -901,7 +907,7 @@ img, svg { max-width: 100%; }
 <script>
 // ====== Trạng thái + lưu trữ (localStorage) ======
 var LS_KEY = 'caocap2-Day-15';
-var TOTAL_TASKS = 32;
+var TOTAL_TASKS = 33;
 var ITEM_INFO = {
   "rev-1": [
     "Ôn nhanh 1 (全托)",
@@ -994,6 +1000,10 @@ var ITEM_INFO = {
   "scr-3": [
     "Sắp xếp câu 3",
     "他说，要珍惜时间，珍惜工作，因为他的心态很好，每天都很高兴，觉得生活很好。"
+  ],
+  "scr-4": [
+    "Sắp xếp câu 4",
+    "如果不珍惜时间，就不能好好做幼教，他的心态也不会好。"
   ],
   "read-1": [
     "Đọc hiểu câu 1",

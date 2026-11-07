@@ -239,7 +239,7 @@ img, svg { max-width: 100%; }
   <div class="progress-bar">
     <span>🎯 Tiến độ:</span>
     <div class="progress-track"><div class="progress-fill" id="prog-fill"></div></div>
-    <b id="prog-text">0 / 32</b>
+    <b id="prog-text">0 / 33</b>
     <button class="btn-sm active" id="ime-toggle-btn" onclick="toggleIME()" title="Bật/tắt chế độ gõ Pinyin trực tiếp">⌨️ Gõ Pinyin: BẬT</button>
     <button class="btn-sm" onclick="resetAll()" title="Xoá tiến độ làm lại">↺</button>
   </div>
@@ -690,6 +690,12 @@ img, svg { max-width: 100%; }
 <div class="word-bank" data-words="程序|这个|程序|好|一个|学习|，|好|要|老师|因为|明白|，|老师|很|定义|给|这个|了|好|学生|说|都|。|，"></div>
 <div class="input-check"><button class="btn-primary" onclick="checkScramble(this)">Kiểm tra câu</button><button class="btn-sm" onclick="resetScramble(this)">Làm lại</button><span class="feedback"></span></div>
 </div>
+<div class="scramble-box" id="scr-4" data-target="这个程序真好，他真喜欢创作，妈妈的厨艺也真好，大家都很高兴。">
+<div><b>Câu 4:</b> Chương trình này thật tốt, anh ấy thật thích sáng tác, tài nấu ăn của mẹ cũng thật giỏi, mọi người đều rất vui.</div>
+<div class="answer-zone"></div>
+<div class="word-bank" data-words="这个|真|。|，|的|，|创作|程序|厨艺|，|好|大家|真|很|都|喜欢|高兴|真|好|他|妈妈|也"></div>
+<div class="input-check"><button class="btn-primary" onclick="checkScramble(this)">Kiểm tra câu</button><button class="btn-sm" onclick="resetScramble(this)">Làm lại</button><span class="feedback"></span></div>
+</div>
 </div>
 <div class="card">
 <h2>📚 Bài 7: Đọc hiểu đoạn văn – Chọn đáp án <span class="badge">Đọc hiểu Cao cấp 2</span></h2>
@@ -835,7 +841,7 @@ img, svg { max-width: 100%; }
 </div>
 <div class="card">
 <h2>📋 Tổng kết để gửi em <span class="badge">Câu cần ôn lại</span></h2>
-<div>Đúng <b id="sum-score">0 / 32</b> mục.</div>
+<div>Đúng <b id="sum-score">0 / 33</b> mục.</div>
 <ul class="summary-list" id="wrong-list"><li>Chưa có câu sai nào — anh làm đến đâu, câu sai sẽ tự gom vào đây.</li></ul>
 <div class="input-check">
 <button class="btn-primary" onclick="copySummary()">📋 Chép kết quả</button>
@@ -866,7 +872,7 @@ img, svg { max-width: 100%; }
 <script>
 // ====== Trạng thái + lưu trữ (localStorage) ======
 var LS_KEY = 'caocap2-Day-24';
-var TOTAL_TASKS = 32;
+var TOTAL_TASKS = 33;
 var ITEM_INFO = {
   "rev-1": [
     "Ôn nhanh 1 (志愿者)",
@@ -959,6 +965,10 @@ var ITEM_INFO = {
   "scr-3": [
     "Sắp xếp câu 3",
     "老师给这个程序一个定义，学生都明白了，因为老师说这个程序很好，要好好学习。"
+  ],
+  "scr-4": [
+    "Sắp xếp câu 4",
+    "这个程序真好，他真喜欢创作，妈妈的厨艺也真好，大家都很高兴。"
   ],
   "read-1": [
     "Đọc hiểu câu 1",

@@ -239,7 +239,7 @@ img, svg { max-width: 100%; }
   <div class="progress-bar">
     <span>🎯 Tiến độ:</span>
     <div class="progress-track"><div class="progress-fill" id="prog-fill"></div></div>
-    <b id="prog-text">0 / 32</b>
+    <b id="prog-text">0 / 33</b>
     <button class="btn-sm active" id="ime-toggle-btn" onclick="toggleIME()" title="Bật/tắt chế độ gõ Pinyin trực tiếp">⌨️ Gõ Pinyin: BẬT</button>
     <button class="btn-sm" onclick="resetAll()" title="Xoá tiến độ làm lại">↺</button>
   </div>
@@ -687,6 +687,12 @@ img, svg { max-width: 100%; }
 <div class="word-bank" data-words="旁|，|商店|边|要|去|经营|这个|人|买|新|电脑|，|一|手机|和|可是|一些|买|的|，|街道|在|家|。|兼容|他|，|东西|不|去"></div>
 <div class="input-check"><button class="btn-primary" onclick="checkScramble(this)">Kiểm tra câu</button><button class="btn-sm" onclick="resetScramble(this)">Làm lại</button><span class="feedback"></span></div>
 </div>
+<div class="scramble-box" id="scr-4" data-target="他既喜欢经营商店，又喜欢借鉴经验，这个街道简直太热闹了，大家都来买东西。">
+<div><b>Câu 4:</b> Anh ấy vừa thích kinh doanh cửa hàng, vừa thích học hỏi kinh nghiệm, con đường này quả thực quá náo nhiệt, mọi người đều đến mua đồ.</div>
+<div class="answer-zone"></div>
+<div class="word-bank" data-words="他|热闹|东西|简直|商店|喜欢|，|。|经验|都|，|喜欢|既|买|，|街道|这个|借鉴|大家|太|经营|又|了|来"></div>
+<div class="input-check"><button class="btn-primary" onclick="checkScramble(this)">Kiểm tra câu</button><button class="btn-sm" onclick="resetScramble(this)">Làm lại</button><span class="feedback"></span></div>
+</div>
 </div>
 <div class="card">
 <h2>📚 Bài 7: Đọc hiểu đoạn văn – Chọn đáp án <span class="badge">Đọc hiểu Cao cấp 2 · Tổng kết tuần</span></h2>
@@ -835,7 +841,7 @@ img, svg { max-width: 100%; }
 </div>
 <div class="card">
 <h2>📋 Tổng kết để gửi em <span class="badge">Câu cần ôn lại</span></h2>
-<div>Đúng <b id="sum-score">0 / 32</b> mục.</div>
+<div>Đúng <b id="sum-score">0 / 33</b> mục.</div>
 <ul class="summary-list" id="wrong-list"><li>Chưa có câu sai nào — anh làm đến đâu, câu sai sẽ tự gom vào đây.</li></ul>
 <div class="input-check">
 <button class="btn-primary" onclick="copySummary()">📋 Chép kết quả</button>
@@ -866,7 +872,7 @@ img, svg { max-width: 100%; }
 <script>
 // ====== Trạng thái + lưu trữ (localStorage) ======
 var LS_KEY = 'caocap2-Day-35';
-var TOTAL_TASKS = 32;
+var TOTAL_TASKS = 33;
 var ITEM_INFO = {
   "rev-1": [
     "Ôn nhanh 1 (代替)",
@@ -959,6 +965,10 @@ var ITEM_INFO = {
   "scr-3": [
     "Sắp xếp câu 3",
     "他经营一家商店，在街道旁边，一些人去买东西，可是这个电脑和手机不兼容，要去买新的。"
+  ],
+  "scr-4": [
+    "Sắp xếp câu 4",
+    "他既喜欢经营商店，又喜欢借鉴经验，这个街道简直太热闹了，大家都来买东西。"
   ],
   "read-1": [
     "Đọc hiểu câu 1",
