@@ -239,7 +239,7 @@ img, svg { max-width: 100%; }
   <div class="progress-bar">
     <span>🎯 Tiến độ:</span>
     <div class="progress-track"><div class="progress-fill" id="prog-fill"></div></div>
-    <b id="prog-text">0 / 32</b>
+    <b id="prog-text">0 / 33</b>
     <button class="btn-sm active" id="ime-toggle-btn" onclick="toggleIME()" title="Bật/tắt chế độ gõ Pinyin trực tiếp">⌨️ Gõ Pinyin: BẬT</button>
     <button class="btn-sm" onclick="resetAll()" title="Xoá tiến độ làm lại">↺</button>
   </div>
@@ -732,6 +732,12 @@ img, svg { max-width: 100%; }
 <div class="word-bank" data-words="高薪|他|因为|，|都|，|户口|。|高兴|了|好|改善|有关部门|工作|很|是|的|人|很|，|一些|人"></div>
 <div class="input-check"><button class="btn-primary" onclick="checkScramble(this)">Kiểm tra câu</button><button class="btn-sm" onclick="resetScramble(this)">Làm lại</button><span class="feedback"></span></div>
 </div>
+<div class="scramble-box" id="scr-4" data-target="他快要回胡同了，他是海归，户口的事也要做好，他说高薪的工作以后再说。">
+<div><b>Câu 4:</b> Anh ấy sắp về ngõ rồi, anh ấy là người du học về nước, việc hộ khẩu cũng phải làm cho tốt, anh ấy nói công việc lương cao để sau hãy nói.</div>
+<div class="answer-zone"></div>
+<div class="word-bank" data-words="回|说|说|好|，|的|事|户口|以后|他|。|他|是|了|做|的|再|要|海归|他|也|要|快|，|胡同|工作|，|高薪"></div>
+<div class="input-check"><button class="btn-primary" onclick="checkScramble(this)">Kiểm tra câu</button><button class="btn-sm" onclick="resetScramble(this)">Làm lại</button><span class="feedback"></span></div>
+</div>
 </div>
 <div class="card">
 <h2>📚 Bài 7: Đọc hiểu đoạn văn – Chọn đáp án <span class="badge">Đọc hiểu Cao cấp 2</span></h2>
@@ -877,7 +883,7 @@ img, svg { max-width: 100%; }
 </div>
 <div class="card">
 <h2>📋 Tổng kết để gửi em <span class="badge">Câu cần ôn lại</span></h2>
-<div>Đúng <b id="sum-score">0 / 32</b> mục.</div>
+<div>Đúng <b id="sum-score">0 / 33</b> mục.</div>
 <ul class="summary-list" id="wrong-list"><li>Chưa có câu sai nào — anh làm đến đâu, câu sai sẽ tự gom vào đây.</li></ul>
 <div class="input-check">
 <button class="btn-primary" onclick="copySummary()">📋 Chép kết quả</button>
@@ -908,7 +914,7 @@ img, svg { max-width: 100%; }
 <script>
 // ====== Trạng thái + lưu trữ (localStorage) ======
 var LS_KEY = 'caocap2-Day-51';
-var TOTAL_TASKS = 32;
+var TOTAL_TASKS = 33;
 var ITEM_INFO = {
   "rev-1": [
     "Ôn nhanh 1 (承接)",
@@ -1001,6 +1007,10 @@ var ITEM_INFO = {
   "scr-3": [
     "Sắp xếp câu 3",
     "有关部门改善了户口，一些人都很高兴，因为他是高薪的人，工作很好。"
+  ],
+  "scr-4": [
+    "Sắp xếp câu 4",
+    "他快要回胡同了，他是海归，户口的事也要做好，他说高薪的工作以后再说。"
   ],
   "read-1": [
     "Đọc hiểu câu 1",

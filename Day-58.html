@@ -239,7 +239,7 @@ img, svg { max-width: 100%; }
   <div class="progress-bar">
     <span>🎯 Tiến độ:</span>
     <div class="progress-track"><div class="progress-fill" id="prog-fill"></div></div>
-    <b id="prog-text">0 / 32</b>
+    <b id="prog-text">0 / 33</b>
     <button class="btn-sm active" id="ime-toggle-btn" onclick="toggleIME()" title="Bật/tắt chế độ gõ Pinyin trực tiếp">⌨️ Gõ Pinyin: BẬT</button>
     <button class="btn-sm" onclick="resetAll()" title="Xoá tiến độ làm lại">↺</button>
   </div>
@@ -734,6 +734,12 @@ img, svg { max-width: 100%; }
 <div class="word-bank" data-words="他|积蓄|他|很|了|一些|。|年|工作|，|这里|说|好|，|可是|一些|是|钱|了|，|风水宝地|，"></div>
 <div class="input-check"><button class="btn-primary" onclick="checkScramble(this)">Kiểm tra câu</button><button class="btn-sm" onclick="resetScramble(this)">Làm lại</button><span class="feedback"></span></div>
 </div>
+<div class="scramble-box" id="scr-4" data-target="这个工程到底做不做？他问大家，规划的事也要说好，这里是风水宝地，老百姓都喜欢。">
+<div><b>Câu 4:</b> Công trình này rốt cuộc có làm hay không? Anh ấy hỏi mọi người, việc quy hoạch cũng phải nói cho rõ, đây là đất phong thủy tốt, người dân đều thích.</div>
+<div class="answer-zone"></div>
+<div class="word-bank" data-words="事|是|喜欢|规划|都|要|工程|问|说|，|做|的|到底|他|老百姓|不|好|这个|做|风水宝地|这里|，|。|？|，|也|大家"></div>
+<div class="input-check"><button class="btn-primary" onclick="checkScramble(this)">Kiểm tra câu</button><button class="btn-sm" onclick="resetScramble(this)">Làm lại</button><span class="feedback"></span></div>
+</div>
 </div>
 <div class="card">
 <h2>📚 Bài 7: Đọc hiểu đoạn văn – Chọn đáp án <span class="badge">Đọc hiểu Cao cấp 2</span></h2>
@@ -879,7 +885,7 @@ img, svg { max-width: 100%; }
 </div>
 <div class="card">
 <h2>📋 Tổng kết để gửi em <span class="badge">Câu cần ôn lại</span></h2>
-<div>Đúng <b id="sum-score">0 / 32</b> mục.</div>
+<div>Đúng <b id="sum-score">0 / 33</b> mục.</div>
 <ul class="summary-list" id="wrong-list"><li>Chưa có câu sai nào — anh làm đến đâu, câu sai sẽ tự gom vào đây.</li></ul>
 <div class="input-check">
 <button class="btn-primary" onclick="copySummary()">📋 Chép kết quả</button>
@@ -910,7 +916,7 @@ img, svg { max-width: 100%; }
 <script>
 // ====== Trạng thái + lưu trữ (localStorage) ======
 var LS_KEY = 'caocap2-Day-58';
-var TOTAL_TASKS = 32;
+var TOTAL_TASKS = 33;
 var ITEM_INFO = {
   "rev-1": [
     "Ôn nhanh 1 (补充)",
@@ -1003,6 +1009,10 @@ var ITEM_INFO = {
   "scr-3": [
     "Sắp xếp câu 3",
     "他工作了一些年，积蓄了一些钱，可是他说，这里是风水宝地，很好。"
+  ],
+  "scr-4": [
+    "Sắp xếp câu 4",
+    "这个工程到底做不做？他问大家，规划的事也要说好，这里是风水宝地，老百姓都喜欢。"
   ],
   "read-1": [
     "Đọc hiểu câu 1",

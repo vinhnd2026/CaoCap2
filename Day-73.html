@@ -239,7 +239,7 @@ img, svg { max-width: 100%; }
   <div class="progress-bar">
     <span>🎯 Tiến độ:</span>
     <div class="progress-track"><div class="progress-fill" id="prog-fill"></div></div>
-    <b id="prog-text">0 / 32</b>
+    <b id="prog-text">0 / 33</b>
     <button class="btn-sm active" id="ime-toggle-btn" onclick="toggleIME()" title="Bật/tắt chế độ gõ Pinyin trực tiếp">⌨️ Gõ Pinyin: BẬT</button>
     <button class="btn-sm" onclick="resetAll()" title="Xoá tiến độ làm lại">↺</button>
   </div>
@@ -681,6 +681,12 @@ img, svg { max-width: 100%; }
 <div class="word-bank" data-words="有|他|故事|这个|的|正直|喜欢|，|人|主角|的|保障|是|东西|是|，|这个|一个|，|我|。|很|可是"></div>
 <div class="input-check"><button class="btn-primary" onclick="checkScramble(this)">Kiểm tra câu</button><button class="btn-sm" onclick="resetScramble(this)">Làm lại</button><span class="feedback"></span></div>
 </div>
+<div class="scramble-box" id="scr-4" data-target="你要么做正直的主角，要么就回家，这个房子是砖木做的，你追求的东西在这里有保障。">
+<div><b>Câu 4:</b> Anh hoặc làm nhân vật chính chính trực, hoặc về nhà, ngôi nhà này làm bằng gạch và gỗ, thứ anh theo đuổi ở đây có bảo đảm.</div>
+<div class="answer-zone"></div>
+<div class="word-bank" data-words="东西|砖木|保障|是|主角|追求|要|你|，|你|就|房|。|回|正直|的|，|有|子|做|在|要|做|这里|家|，|这个|的|的|么|么"></div>
+<div class="input-check"><button class="btn-primary" onclick="checkScramble(this)">Kiểm tra câu</button><button class="btn-sm" onclick="resetScramble(this)">Làm lại</button><span class="feedback"></span></div>
+</div>
 </div>
 <div class="card">
 <h2>📚 Bài 7: Đọc hiểu đoạn văn – Chọn đáp án <span class="badge">Đọc hiểu Cao cấp 2 · Tổng kết Bài 9</span></h2>
@@ -861,7 +867,7 @@ img, svg { max-width: 100%; }
 </div>
 <div class="card">
 <h2>📋 Tổng kết để gửi em <span class="badge">Câu cần ôn lại</span></h2>
-<div>Đúng <b id="sum-score">0 / 32</b> mục.</div>
+<div>Đúng <b id="sum-score">0 / 33</b> mục.</div>
 <ul class="summary-list" id="wrong-list"><li>Chưa có câu sai nào — anh làm đến đâu, câu sai sẽ tự gom vào đây.</li></ul>
 <div class="input-check">
 <button class="btn-primary" onclick="copySummary()">📋 Chép kết quả</button>
@@ -892,7 +898,7 @@ img, svg { max-width: 100%; }
 <script>
 // ====== Trạng thái + lưu trữ (localStorage) ======
 var LS_KEY = 'caocap2-Day-73';
-var TOTAL_TASKS = 32;
+var TOTAL_TASKS = 33;
 var ITEM_INFO = {
   "rev-1": [
     "Ôn nhanh 1 (以……为蓝本)",
@@ -985,6 +991,10 @@ var ITEM_INFO = {
   "scr-3": [
     "Sắp xếp câu 3",
     "这个东西有保障，我很喜欢，可是他是一个正直的人，是这个故事的主角。"
+  ],
+  "scr-4": [
+    "Sắp xếp câu 4",
+    "你要么做正直的主角，要么就回家，这个房子是砖木做的，你追求的东西在这里有保障。"
   ],
   "read-1": [
     "Đọc hiểu câu 1",

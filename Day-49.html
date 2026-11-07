@@ -239,7 +239,7 @@ img, svg { max-width: 100%; }
   <div class="progress-bar">
     <span>🎯 Tiến độ:</span>
     <div class="progress-track"><div class="progress-fill" id="prog-fill"></div></div>
-    <b id="prog-text">0 / 32</b>
+    <b id="prog-text">0 / 33</b>
     <button class="btn-sm active" id="ime-toggle-btn" onclick="toggleIME()" title="Bật/tắt chế độ gõ Pinyin trực tiếp">⌨️ Gõ Pinyin: BẬT</button>
     <button class="btn-sm" onclick="resetAll()" title="Xoá tiến độ làm lại">↺</button>
   </div>
@@ -685,6 +685,12 @@ img, svg { max-width: 100%; }
 <div class="word-bank" data-words="，|，|可是|比例|也|比赛|的|这个|场景|有|差距|很|差不多|很|不|特色|，|。|大|关键"></div>
 <div class="input-check"><button class="btn-primary" onclick="checkScramble(this)">Kiểm tra câu</button><button class="btn-sm" onclick="resetScramble(this)">Làm lại</button><span class="feedback"></span></div>
 </div>
+<div class="scramble-box" id="scr-4" data-target="他编写了这个故事就去看比赛了，场景很好，产业的人也说，差距不大，大家都很高兴。">
+<div><b>Câu 4:</b> Anh ấy biên soạn xong câu chuyện này thì đi xem thi đấu ngay, khung cảnh rất đẹp, người trong ngành cũng nói khoảng cách không lớn, mọi người đều rất vui.</div>
+<div class="answer-zone"></div>
+<div class="word-bank" data-words="大|好|人|也|不|大家|很|故事|就|，|，|。|场景|，|高兴|差距|了|的|都|他|说|编写|了|看|很|，|比赛|产业|这个|去"></div>
+<div class="input-check"><button class="btn-primary" onclick="checkScramble(this)">Kiểm tra câu</button><button class="btn-sm" onclick="resetScramble(this)">Làm lại</button><span class="feedback"></span></div>
+</div>
 </div>
 <div class="card">
 <h2>📚 Bài 7: Đọc hiểu đoạn văn – Chọn đáp án <span class="badge">Đọc hiểu Cao cấp 2 · Tổng kết tuần</span></h2>
@@ -835,7 +841,7 @@ img, svg { max-width: 100%; }
 </div>
 <div class="card">
 <h2>📋 Tổng kết để gửi em <span class="badge">Câu cần ôn lại</span></h2>
-<div>Đúng <b id="sum-score">0 / 32</b> mục.</div>
+<div>Đúng <b id="sum-score">0 / 33</b> mục.</div>
 <ul class="summary-list" id="wrong-list"><li>Chưa có câu sai nào — anh làm đến đâu, câu sai sẽ tự gom vào đây.</li></ul>
 <div class="input-check">
 <button class="btn-primary" onclick="copySummary()">📋 Chép kết quả</button>
@@ -866,7 +872,7 @@ img, svg { max-width: 100%; }
 <script>
 // ====== Trạng thái + lưu trữ (localStorage) ======
 var LS_KEY = 'caocap2-Day-49';
-var TOTAL_TASKS = 32;
+var TOTAL_TASKS = 33;
 var ITEM_INFO = {
   "rev-1": [
     "Ôn nhanh 1 (有关部门)",
@@ -959,6 +965,10 @@ var ITEM_INFO = {
   "scr-3": [
     "Sắp xếp câu 3",
     "这个场景很有特色，也很关键，可是比赛的差距不大，比例差不多。"
+  ],
+  "scr-4": [
+    "Sắp xếp câu 4",
+    "他编写了这个故事就去看比赛了，场景很好，产业的人也说，差距不大，大家都很高兴。"
   ],
   "read-1": [
     "Đọc hiểu câu 1",

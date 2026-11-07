@@ -239,7 +239,7 @@ img, svg { max-width: 100%; }
   <div class="progress-bar">
     <span>🎯 Tiến độ:</span>
     <div class="progress-track"><div class="progress-fill" id="prog-fill"></div></div>
-    <b id="prog-text">0 / 32</b>
+    <b id="prog-text">0 / 33</b>
     <button class="btn-sm active" id="ime-toggle-btn" onclick="toggleIME()" title="Bật/tắt chế độ gõ Pinyin trực tiếp">⌨️ Gõ Pinyin: BẬT</button>
     <button class="btn-sm" onclick="resetAll()" title="Xoá tiến độ làm lại">↺</button>
   </div>
@@ -709,6 +709,12 @@ img, svg { max-width: 100%; }
 <div class="word-bank" data-words="他|说|就业|他|别人|国|可是|但是|，|在乎|，|他的|容易|不|挑战|他|怕|对|很|，|看法|。|回|不"></div>
 <div class="input-check"><button class="btn-primary" onclick="checkScramble(this)">Kiểm tra câu</button><button class="btn-sm" onclick="resetScramble(this)">Làm lại</button><span class="feedback"></span></div>
 </div>
+<div class="scramble-box" id="scr-4" data-target="他从来没带身份证出门，也从来不在乎挑战，过年的时候，他还是回家和家人团聚了。">
+<div><b>Câu 4:</b> Anh ấy chưa bao giờ mang thẻ căn cước ra khỏi nhà, cũng chưa bao giờ để ý đến thách thức, dịp Tết anh ấy vẫn về nhà đoàn tụ với người nhà.</div>
+<div class="answer-zone"></div>
+<div class="word-bank" data-words="没|和|来|身份证|他|，|年|，|他|时候|在乎|。|出门|团聚|过|挑战|带|从|，|的|家|了|也|还是|不|来|从|回|家人"></div>
+<div class="input-check"><button class="btn-primary" onclick="checkScramble(this)">Kiểm tra câu</button><button class="btn-sm" onclick="resetScramble(this)">Làm lại</button><span class="feedback"></span></div>
+</div>
 </div>
 <div class="card">
 <h2>📚 Bài 7: Đọc hiểu đoạn văn – Chọn đáp án <span class="badge">Đọc hiểu Cao cấp 2 · Tổng kết tuần</span></h2>
@@ -814,10 +820,10 @@ img, svg { max-width: 100%; }
 <div class="q-item" id="dlg-2">
 <div><b>Câu 2.</b> 小红为什么很在乎身份证？</div>
 <div class="mc-options">
-<button class="mc-btn" onclick="checkMC(this, false, 'dlg-2', '✗ Chưa đúng: 小红：我很在乎，我的身份证很重要。坐火车回家要用身份证。')">A. 因为她去大学</button>
-<button class="mc-btn" onclick="checkMC(this, false, 'dlg-2', '✗ Chưa đúng: 小红：我很在乎，我的身份证很重要。坐火车回家要用身份证。')">B. 因为她喜欢身份证</button>
-<button class="mc-btn" onclick="checkMC(this, false, 'dlg-2', '✗ Chưa đúng: 小红：我很在乎，我的身份证很重要。坐火车回家要用身份证。')">C. 因为她去饭店</button>
-<button class="mc-btn" onclick="checkMC(this, true, 'dlg-2', '✓ Chính xác! 小红：我很在乎，我的身份证很重要。坐火车回家要用身份证。')">D. 因为坐火车回家要用身份证</button>
+<button class="mc-btn" onclick="checkMC(this, false, 'dlg-2', '✗ Chưa đúng: 小红：我很在乎，我的身份证很重要。')">A. 因为她去大学</button>
+<button class="mc-btn" onclick="checkMC(this, false, 'dlg-2', '✗ Chưa đúng: 小红：我很在乎，我的身份证很重要。')">B. 因为她喜欢身份证</button>
+<button class="mc-btn" onclick="checkMC(this, false, 'dlg-2', '✗ Chưa đúng: 小红：我很在乎，我的身份证很重要。')">C. 因为她去饭店</button>
+<button class="mc-btn" onclick="checkMC(this, true, 'dlg-2', '✓ Chính xác! 小红：我很在乎，我的身份证很重要。')">D. 因为身份证很重要</button>
 </div>
 <div class="feedback" style="margin-top:6px;"></div></div>
 <div class="q-item" id="dlg-3">
@@ -861,7 +867,7 @@ img, svg { max-width: 100%; }
 </div>
 <div class="card">
 <h2>📋 Tổng kết để gửi em <span class="badge">Câu cần ôn lại</span></h2>
-<div>Đúng <b id="sum-score">0 / 32</b> mục.</div>
+<div>Đúng <b id="sum-score">0 / 33</b> mục.</div>
 <ul class="summary-list" id="wrong-list"><li>Chưa có câu sai nào — anh làm đến đâu, câu sai sẽ tự gom vào đây.</li></ul>
 <div class="input-check">
 <button class="btn-primary" onclick="copySummary()">📋 Chép kết quả</button>
@@ -883,7 +889,7 @@ img, svg { max-width: 100%; }
 <p><b>Bài 5 (Đoạn văn):</b> 身份证 → 挑战 → 团聚 → 运输 → 在乎</p>
 <p><b>Bài 6 (Sắp xếp câu):</b><br>1. 你出门的时候，要带身份证，因为学习汉语对他来说是一个很大的挑战。<br>2. 过年的时候，一家人都回家团聚了，妈妈很高兴，可是这个东西要开车运输到家里。<br>3. 他很在乎别人对他的看法，可是他说，回国就业不容易，但是他不怕挑战。</p>
 <p><b>Bài 7 (Đọc hiểu):</b> 1. C — 海归 &nbsp;|&nbsp; 2. B — 金融 &nbsp;|&nbsp; 3. C — 不容易</p>
-<p><b>Bài 8 (Nghe hội thoại):</b> 1. A — 坐火车回家 &nbsp; 2. D — 因为坐火车回家要用身份证 &nbsp; 3. C — 他坐火车回家 &nbsp; 4. B — 高兴</p>
+<p><b>Bài 8 (Nghe hội thoại):</b> 1. A — 坐火车回家 &nbsp; 2. D — 因为身份证很重要 &nbsp; 3. C — 他坐火车回家 &nbsp; 4. B — 高兴</p>
 </details>
 </div>
 <div class="footer">Học tốt nhé anh! Làm xong anh chép phần Tổng kết gửi em nhé — câu nào sai em sẽ đưa vào danh sách “Cần ôn thêm”.</div>
@@ -892,7 +898,7 @@ img, svg { max-width: 100%; }
 <script>
 // ====== Trạng thái + lưu trữ (localStorage) ======
 var LS_KEY = 'caocap2-Day-55';
-var TOTAL_TASKS = 32;
+var TOTAL_TASKS = 33;
 var ITEM_INFO = {
   "rev-1": [
     "Ôn nhanh 1 (勤奋好学)",
@@ -986,6 +992,10 @@ var ITEM_INFO = {
     "Sắp xếp câu 3",
     "他很在乎别人对他的看法，可是他说，回国就业不容易，但是他不怕挑战。"
   ],
+  "scr-4": [
+    "Sắp xếp câu 4",
+    "他从来没带身份证出门，也从来不在乎挑战，过年的时候，他还是回家和家人团聚了。"
+  ],
   "read-1": [
     "Đọc hiểu câu 1",
     "C — 海归"
@@ -1004,7 +1014,7 @@ var ITEM_INFO = {
   ],
   "dlg-2": [
     "Nghe hội thoại 2 (小红为什么很在乎身份证？)",
-    "因为坐火车回家要用身份证"
+    "因为身份证很重要"
   ],
   "dlg-3": [
     "Nghe hội thoại 3 (明天上午小明做什么？)",

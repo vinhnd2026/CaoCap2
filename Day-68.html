@@ -239,7 +239,7 @@ img, svg { max-width: 100%; }
   <div class="progress-bar">
     <span>🎯 Tiến độ:</span>
     <div class="progress-track"><div class="progress-fill" id="prog-fill"></div></div>
-    <b id="prog-text">0 / 32</b>
+    <b id="prog-text">0 / 33</b>
     <button class="btn-sm active" id="ime-toggle-btn" onclick="toggleIME()" title="Bật/tắt chế độ gõ Pinyin trực tiếp">⌨️ Gõ Pinyin: BẬT</button>
     <button class="btn-sm" onclick="resetAll()" title="Xoá tiến độ làm lại">↺</button>
   </div>
@@ -733,6 +733,12 @@ img, svg { max-width: 100%; }
 <div class="word-bank" data-words="这个|很|的|。|的|，|故事|，|喜欢|一个|他|，|这个|可是|描写|去|了|化身|了|个|回来|是|孩子|经典|假|里|活泼|居然|度|孩子|都|大家"></div>
 <div class="input-check"><button class="btn-primary" onclick="checkScramble(this)">Kiểm tra câu</button><button class="btn-sm" onclick="resetScramble(this)">Làm lại</button><span class="feedback"></span></div>
 </div>
+<div class="scramble-box" id="scr-4" data-target="他居然描写了这个经典，大家都说，他是故事里的化身，这个孩子也很活泼，大家很喜欢浪漫主义。">
+<div><b>Câu 4:</b> Không ngờ anh ấy lại miêu tả kinh điển này, mọi người đều nói anh ấy là hóa thân trong câu chuyện, đứa trẻ này cũng rất hoạt bát, mọi người rất thích chủ nghĩa lãng mạn.</div>
+<div class="answer-zone"></div>
+<div class="word-bank" data-words="他|是|描写|他|，|大家|化身|很|的|活泼|喜欢|，|，|孩子|很|里|说|也|这个|了|大家|浪漫主义|。|这个|，|都|居然|故事|经典"></div>
+<div class="input-check"><button class="btn-primary" onclick="checkScramble(this)">Kiểm tra câu</button><button class="btn-sm" onclick="resetScramble(this)">Làm lại</button><span class="feedback"></span></div>
+</div>
 </div>
 <div class="card">
 <h2>📚 Bài 7: Đọc hiểu đoạn văn – Chọn đáp án <span class="badge">Đọc hiểu Cao cấp 2</span></h2>
@@ -876,7 +882,7 @@ img, svg { max-width: 100%; }
 </div>
 <div class="card">
 <h2>📋 Tổng kết để gửi em <span class="badge">Câu cần ôn lại</span></h2>
-<div>Đúng <b id="sum-score">0 / 32</b> mục.</div>
+<div>Đúng <b id="sum-score">0 / 33</b> mục.</div>
 <ul class="summary-list" id="wrong-list"><li>Chưa có câu sai nào — anh làm đến đâu, câu sai sẽ tự gom vào đây.</li></ul>
 <div class="input-check">
 <button class="btn-primary" onclick="copySummary()">📋 Chép kết quả</button>
@@ -907,7 +913,7 @@ img, svg { max-width: 100%; }
 <script>
 // ====== Trạng thái + lưu trữ (localStorage) ======
 var LS_KEY = 'caocap2-Day-68';
-var TOTAL_TASKS = 32;
+var TOTAL_TASKS = 33;
 var ITEM_INFO = {
   "rev-1": [
     "Ôn nhanh 1 (风土人情)",
@@ -1000,6 +1006,10 @@ var ITEM_INFO = {
   "scr-3": [
     "Sắp xếp câu 3",
     "他居然去度了个假，回来描写了一个很活泼的孩子，可是这个孩子是故事里的化身，大家都喜欢这个经典。"
+  ],
+  "scr-4": [
+    "Sắp xếp câu 4",
+    "他居然描写了这个经典，大家都说，他是故事里的化身，这个孩子也很活泼，大家很喜欢浪漫主义。"
   ],
   "read-1": [
     "Đọc hiểu câu 1",
