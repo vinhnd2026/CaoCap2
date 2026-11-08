@@ -25,7 +25,7 @@ Bộ bài học Cao cấp 2: 81 ngày, mỗi ngày 5 từ mới, học từ Bài
 
 ## Bổ sung (học sau khi xong 81 ngày)
 
-- **📖 Ôn tập Ngữ pháp Cao cấp 2 (40 điểm + 33 bài tập + mục Động từ ly hợp):** [Bai-Hoc-On-Ngu-Phap-CaoCap2.html](https://vinhnd2026.github.io/CaoCap2/Bai-Hoc-On-Ngu-Phap-CaoCap2.html) — pinyin hiện sẵn trong mọi ví dụ.
+- **📖 Ôn tập Ngữ pháp Cao cấp 2 (40 điểm + 33 bài tập):** [Bai-Hoc-On-Ngu-Phap-CaoCap2.html](https://vinhnd2026.github.io/CaoCap2/Bai-Hoc-On-Ngu-Phap-CaoCap2.html) — pinyin hiện sẵn trong mọi ví dụ; kèm mục Động từ ly hợp （离合动词） với ví dụ dạng tách cho từng động từ.
 - **📚 Bài Tổng Kết Cao cấp 2:** [Bai-Hoc-Tong-Ket-CaoCap2.html](https://vinhnd2026.github.io/CaoCap2/Bai-Hoc-Tong-Ket-CaoCap2.html) — flashcard toàn bộ từ, bảng từ vựng 10 bài, 8 bài tập tổng kết (62 bài tập), truyện tổng kết dùng đủ toàn bộ từ vựng.
 
 Bấm vào từng ngày bên dưới để mở thẳng trang bài học của ngày đó.
@@ -73,7 +73,7 @@ Bấm vào từng ngày bên dưới để mở thẳng trang bài học của n
 | Day 38 | Bài 5 | 相似, 消费, 小区, 兴高采烈, 烟花 | [Mở bài học](https://vinhnd2026.github.io/CaoCap2/Day-38.html) |
 | Day 39 | Bài 5–6 | 焰火, 依照, 予以, 噪声, 爆冷门 | [Mở bài học](https://vinhnd2026.github.io/CaoCap2/Day-39.html) |
 | Day 40 | Bài 6 | 场地, 踹, 传, 此话怎讲, 大致 | [Mở bài học](https://vinhnd2026.github.io/CaoCap2/Day-40.html) |
-| Day 41 | Bài 6 | 赌, 对决, 防守, 高考, 搞 | [Mở bài học](https://vinhnd2026.github.io/CaoCap2/Day-41.html) |
+| Day 41 | Bài 6 | 赌, 对决, 防守, 高考, 稿 | [Mở bài học](https://vinhnd2026.github.io/CaoCap2/Day-41.html) |
 | Day 42 | Bài 6 | 供……参考, 关键, 含糊, 锦标赛, 进攻 | [Mở bài học](https://vinhnd2026.github.io/CaoCap2/Day-42.html) |
 | Day 43 | Bài 6 | 巨星, 决赛, 可行性, 铿锵, 凌晨 | [Mở bài học](https://vinhnd2026.github.io/CaoCap2/Day-43.html) |
 | Day 44 | Bài 6 | 魅力, 门卫, 纳入, 偏, 拼搏 | [Mở bài học](https://vinhnd2026.github.io/CaoCap2/Day-44.html) |
